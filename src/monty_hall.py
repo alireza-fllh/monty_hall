@@ -32,7 +32,7 @@ def game_simulator (num_trials: int = 100) -> Tuple[float, float]:
     num_wins_with_switching = sum([monty_hall_game(True) for _ in range(num_trials)])
     num_wins_without_switching = sum([monty_hall_game(False) for _ in range(num_trials)])
 
-    return num_wins_with_switching/num_trials, num_wins_without_switching/num_trials
+    return num_wins_with_switching, num_wins_without_switching
 
 
 if __name__ == "__main__":
